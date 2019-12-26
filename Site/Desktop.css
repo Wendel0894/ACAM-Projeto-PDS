@@ -75,7 +75,7 @@ body{
     margin-bottom: 18px;
 }
 
-/*Cadastros*/
+/*tipos de Cadastros*/
 
 .tituloC{
     color:white;
@@ -115,6 +115,70 @@ body{
     color: white;
     box-shadow:0.5px 0.5px 0.5px gray;
     cursor:pointer
+}
+
+/*Cadastros*/
+/*Servirá para todos os tipos de cadastros*/
+.caixaCadastro{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.caixaCadastro form{
+    background-color: rgba(128, 128, 128, 0.315);
+    border-radius: 10px;
+    padding: 50px;
+    transition: all 0.5s;
+}
+.caixaCadastro form:hover{
+    background-color: rgba(128, 128, 128, 0.493);;
+}
+
+.tituloCadastros{
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+#camposCadastro{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.Cadastro{
+    border:none;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.Cadastro:hover{
+    box-shadow: 1px 1px 1px rgba(51, 50, 50, 0.733);
+}
+
+#criarConta{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.botãoCadastro{
+    width: 150px;
+    height: 35px;
+    border:none;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.botãoCadastro:hover{
+    cursor: pointer;
 }
 
 
