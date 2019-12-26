@@ -1,0 +1,120 @@
+body{
+    background-image:url(TelaDeFundo.jpg);
+    background-size: cover;
+}
+
+/*tela de login*/
+
+
+.caixaForm{
+    display: flex;
+    justify-content: center;
+}
+
+.caixaForm form{
+    background-color:#29282844;
+    border-radius: 10px;
+    margin-top: 180px;
+    padding: 80px;
+}
+
+.caixaForm form:hover{
+    background-color: #27262660;
+}
+#senhaLogin{
+    border: none;
+    width: 350px;
+    height: 40px;
+    margin:10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#emailLogin{
+    border: none;
+    width: 350px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.butãoL{
+    display: flex;
+    justify-content: center;
+}
+#butãoLogin{
+    border: none;
+    background-color:black;
+    color: white;
+    width: 150px;
+    height: 35px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+#butãoLogin:hover{
+    cursor: pointer;
+}
+
+.LinkCadastro{
+    display: flex;
+    justify-content: center;
+}
+.cadastroL{
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.Logo{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+/*Cadastros*/
+
+.tituloC{
+    color:white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 70px;
+}
+
+.caixaC{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.opcoes{
+    background-color: rgba(131, 133, 131, 0.472);
+    padding: 100px;
+    border-radius: 15px;
+}
+
+.campos{
+    width: 250px;
+    height: 200px;
+    border:none;
+    margin:5px;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-radius: 5%;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.507);
+    transition: all 0.5s;
+}
+
+.campos:hover{
+    background-color:rgba(6, 114, 255, 0.616);
+    color: white;
+    box-shadow:0.5px 0.5px 0.5px gray;
+    cursor:pointer
+}
+
+
