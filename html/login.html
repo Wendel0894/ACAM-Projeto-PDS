@@ -8,25 +8,30 @@
 <body>
     <div class="caixaForm">
         <form action="/pagina-processa-dados" method="post">
-            <div class="Logo">
-                <img src="profile-user.png" alt="user" width="130px">
+            <div class="logoPrincipal">
+                <img src="../imagem/Logo-Acam.png" alt="logo">
             </div>
-            <div>
-                <input type="email" id="emailLogin"  placeholder="E-mail:"/>
+            <div class="CampoLogin">
+                <input type="email" id="emailLogin" name="campoLogin" placeholder="E-mail:"/>
             </div>
 
-            <div>
-                <input type="password" id="senhaLogin" placeholder="Senha:" />
+            <div class="CampoLogin">
+                <input type="password" id="senhaLogin"  name="campoLogin" placeholder="Senha:" />
+            </div>
+            
+            <div class="esqueceuSenha">
+                <a href="#" class="esqueceu">Esqueceu sua Senha ?</a>
             </div>
 
             <div class="butãoL">
                 <input type="submit" value="Login" id="butãoLogin">
             </div>
-      
+            <div class="EsqueceuSenha">
+
+            </div>
            <div class="LinkCadastro">
             <a href="EscolherCadastro.html" class="cadastroL">Não tem uma conta? Crie uma aqui!</a>
            </div>
-
         </form>
     </div>
 </body>
