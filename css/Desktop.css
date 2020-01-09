@@ -99,29 +99,29 @@ body{
     color:white;
     font-family: sans-serif;
     text-align: center;
-    margin-top: 30px;
-    font-size: 70px;
+    margin-top: 10px;
+    font-size: 50px;
 }
 
 .caixaC{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .opcoes{
     background-color: rgba(131, 133, 131, 0.472);
-    padding: 100px;
+    padding: 20px;
     border-radius: 15px;
 }
 
 .campos{
-    width: 250px;
-    height: 200px;
+    width: 150px;
+    height: 60px;
     border:none;
-    margin:5px;
+    margin-top:0px;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 5%;
     font-weight: 600;
     background-color: rgba(255, 255, 255, 0.507);
@@ -135,17 +135,22 @@ body{
     cursor:pointer
 }
 
+.campos:focus{
+    background-color:rgba(255, 6, 6, 0.616);
+    color: white;
+}
+
 /*Cadastros*/
 /*Servirá para todos os tipos de cadastros*/
 .caixaCadastro{
     display: flex;
     justify-content: center;
-    margin: 100px;
+    margin: 30px;
 }
 .caixaCadastro form{
     background-color: rgba(128, 128, 128, 0.315);
     border-radius: 10px;
-    padding: 50px;
+    padding: 20px;
     transition: all 0.5s;
 }
 .caixaCadastro form:hover{
@@ -155,9 +160,10 @@ body{
 .tituloCadastros{
     color: white;
     text-align: center;
-    margin-bottom: 60px;
+    margin: 0px;
+    margin-bottom: 20px;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 #camposCadastro{

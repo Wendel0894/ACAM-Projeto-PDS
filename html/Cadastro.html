@@ -9,23 +9,20 @@
     <h1 class="tituloC">Escolha o tipo de Cadastro:</h1>
     <div class="caixaC">
        <div class="opcoes">
-        <div>
-            <div>
-               <a onclick="CadastroPaciente()"><input type="button" value="Paciente" class="campos"></a>
-               <a onclick="CadastroMedico()"><input type="button" value="Médico" class="campos"></a>
+            
+            <input type="button" onclick="CadastroPaciente()" value="Paciente" class="campos">
+            <input type="button" onclick="CadastroMedico()" value="Médico" class="campos">  
+            <input type="button" onclick="CadastroAtendente()" value="Atendente" class="campos">      
+            <input type="button" onclick="CadastroADM()"value="Administrador" class="campos">
+           
+            <div id="cadastro">
+
             </div>
-        </div>
-        <div>
-            <div>
-                <a onclick="CadastroADM()"><input type="button" value="Administrador" class="campos"></a>
-                <a onclick="CadastroAtendente()"><input type="button" value="Atendente" class="campos"></a>
-            </div>
-        </div>
+        
+      
        </div>
 
-       <div id="cadastro">
-
-       </div>
+       
     </div>
     <script src="../script/cadastro.js"></script>
 </body>
