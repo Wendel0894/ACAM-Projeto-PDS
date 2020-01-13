@@ -1,4 +1,5 @@
 body{
+    margin: 0;
     background:linear-gradient(to right,teal, rgb(47, 47, 184));
 }
 
@@ -201,6 +202,96 @@ body{
     cursor: pointer;
 }
 
+/*  pagina inicial  */
+
+/*  Menu:  */
+
+.ContainerMenu{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow:2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.LogoMenu{
+    margin-top: 5px;
+}
+
+.MenuDesktop{
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+    margin-top: 26px;   
+}
+
+.MenuDesktop>li{
+    display: block;
+}
+
+.LinkMenu{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    transition:all 0.5s ease-out;
+}
+
+.LinkLogin{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    color:teal;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    margin: 10px;
+    transition: all 0.5s ease-out;
+}
+
+.LinkTelaCadastro{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    background-color: teal;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+.LinkMenu:hover{
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+.LinkLogin:hover{
+    border-color: teal;
+    background-color: teal;
+    color: white;
+}
+
+#marcadorMenu{
+    display: none;
+}
+.marc{
+     font-size: 30px;
+     color: black;
+     background-color: white;
+     display: block;
+}
+
+.MenuMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -245,6 +336,69 @@ body{
          border:none;
          border-bottom: 2px solid black;
      }
+
+     /*Menu-Mobile*/
+
+     .ContainerMenu{
+         display: none;
+     }
+     .MenuMobile{
+         display: block;
+     }
+     .LogoMenu-Mobile{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .MenuMob{
+        background-color: white;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-left: -302px;
+        transition: all 0.5s;
+        border-top-right-radius: 30px;
+        border-end-end-radius: 30px;
+        box-shadow:2px 2px 2px rgba(0,0,0,0.5);
+    }
+    
+    .MenuMob>li{
+        display: block;
+        background-color: white;
+        margin-top: 35px;
+        text-align: start;
+    
+    }
+    
+    .marc{
+        display: flex;
+    }
+    
+    .LinkMenuM{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: sans-serif;
+        padding: 20px;
+        color: black;
+    }
+    
+    .LinkL{
+        text-decoration: none;
+        font-size: 22px;
+        font-family: sans-serif;
+        padding: 20px;
+        color: black;
+    }
+    
+    #marcadorMenu:checked ~ .MenuMob{
+        margin-left: 0;
+    }
 
 
 
