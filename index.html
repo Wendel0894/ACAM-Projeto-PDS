@@ -4,48 +4,42 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/Desktop.css">
     <title>Home - ACAM</title>
+    <script type="text/javascript">
+        window.onload = function(){
+            abrir()
+        }
+        </script>
 </head>
 <body id="main">
     <header class="ContainerMenu">
 
         <div class="LogoMenu">
-            <img src="imagem/LogoMenor.png" alt="logo" width="200px">
+            <img src="/imagem/LogoMenor.png" alt="logo" width="200px">
         </div>
         
-        <div class="OpcoesMenu">
-            <ul class="MenuDesktop">
-                <li><a href="#" class="LinkMenu">Teste</a></li>
-                <li><a href="#" class="LinkMenu">Teste</a></li>
-                <li><a href="#" class="LinkMenu">Teste</a></li>
-                <li><a href="#" class="LinkMenu">Teste</a></li>
-                <li><a href="html/Cadastro.html" class="LinkLogin">Cadastrar-se</a></li>
-                <li><a href="html/login.html" class="LinkTelaCadastro">Login</a></li>
-            </ul>
-
-        </div>
+        
+        <div id="OpcoesMenu">
+            
     </header>
     <div class="MenuMobile">
         <div class="LogoMenu-Mobile">
-            <img src="imagem/LogoMenor.png" alt="logo" width="200px">
+            <img src="
+        imagem/LogoMenor.png" alt="logo" width="200px">
         </div>
         
-        <div class="OpcoesMenu-Monile">
-            <input type="checkbox" id="marcadorMenu">
-            <label for="marcadorMenu" class="marc">&#9776;</label>
-            <ul class="MenuMob">
-                <li><a href="#" class="LinkMenuM">Teste</a></li>
-                <li><a href="#" class="LinkMenuM">Teste</a></li>
-                <li><a href="#" class="LinkMenuM">Teste</a></li>
-                <li><a href="#" class="LinkMenuM">Teste</a></li>
-                <li><a href="html/login.html" class="LinkL">Login</a></li>
-                <li><a href="html/Cadastro.html" class="LinkL">Cadastrar-se</a></li>
-            </ul>
+        <div id="OpcoesMenu-Monile">
+            
         </div>
     </div>
     
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="firebase/firebase.js"></script>
+    <script src="script/home.js"></script>
+
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
