@@ -1,5 +1,4 @@
-
-                //Função para reiniciar o menu a cada modificação no banco.
+//Função para reiniciar o menu a cada modificação no banco.
 function abrir(){
     var mainmenu = document.getElementById("OpcoesMenu");
     var resultado="<ul class=\"MenuDesktop\">"
@@ -25,7 +24,7 @@ function abrir(){
     
     
                     if(item.val().Usuario=="Administrador"){
-                        resultado+="<li><a onclick='listaUser();closeMenu();' href='#' class=\"LinkMenu\">Aprovação de Usuários</a></li>"
+                        resultado+="<li><a onclick='AprovacaoUsuario()' href='#' class=\"LinkMenu\">Aprovação de Usuários</a></li>"
                         resultado+="<li><a onclick='sair()' href='' class=\"LinkMenu\">Sair</a></li></ul>"
 
                     }
