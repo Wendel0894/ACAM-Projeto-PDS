@@ -17,16 +17,17 @@ function abrir(){
                 //Função para menu Administrador
                 if(email===item.val().Email){
                     resultado+="<li><a href='index.html' class=\"LinkMenu\">Página Inicial</a></li>"
-                    resultado+="<li><a onclick='' href='#' class=\"LinkMenu\">Minha Conta</a></li>";
-                    
+                    resultado+="<li><a onclick='' href='#' class=\"LinkMenu\">Minha Conta</a></li>"
+                
 
                     resultado2+="<li><a href=\"#\" class=\"LinkMenuM\">Teste</a></li>"
                     resultado2+="<li><a href=\"#\" class=\"LinkMenuM\">Teste</a></li></ul>"
     
     
                     if(item.val().Usuario=="Administrador"){
-                        resultado+="<li><a onclick='listaUser();closeMenu();' href='#' class=\"LinkMenu\">Aprovação de Usuários</a></li></ul>";
-                        
+                        resultado+="<li><a onclick='listaUser();closeMenu();' href='#' class=\"LinkMenu\">Aprovação de Usuários</a></li>"
+                        resultado+="<li><a onclick='sair()' href='' class=\"LinkMenu\">Sair</a></li></ul>"
+
                     }
                    
     /*
@@ -79,3 +80,4 @@ function abrir(){
         }
       });
     }
+

@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="caixaForm">
-        <form action="/pagina-processa-dados" method="post">
+        <div  method="post">
             <div class="logoPrincipal">
                 <img src="../imagem/Logo-Acam.png" alt="logo">
             </div>
@@ -30,9 +30,14 @@
 
             </div>
            <div class="LinkCadastro">
-            <a href="/html/Cadastro.html" class="cadastroL">Não tem uma conta? Crie uma aqui!</a>
+            <a href="Cadastro.html" class="cadastroL">Não tem uma conta? Crie uma aqui!</a>
            </div>
-        </form>
+        </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="../firebase/firebase.js"></script>
+    <script src="../script/autenticacao.js"></script>
 </body>
 </html>
