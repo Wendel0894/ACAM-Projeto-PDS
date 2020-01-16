@@ -148,6 +148,7 @@ function UserMedico(){
 
  //Variaveis  
  var Usuario = "Medico";
+ var Funcionario = false;
  var Nome = document.getElementById("nome");
  var CPF = document.getElementById("cpf");
  var CRM = document.getElementById("crm");
@@ -166,6 +167,7 @@ function UserMedico(){
              var chave = firebase.database().ref().child('Usuarios').push().key;
              var Users = {
                  Nome : Nome.value,
+                 Funcionario: Funcionario,
                  Email : Email,
                  CPF: CPF.value,
                  CRM : CRM.value,
@@ -221,11 +223,13 @@ function UserAtendente(){
   
     //Variaveis  
     var Usuario = "Atendente";
+    var Funcionario = false;
     var Nome = document.getElementById("nome");
     var CPF = document.getElementById("cpf");
     var EmailPuro = document.getElementById("email");
     var Senha = document.getElementById("senha");
     var ConfirmacaodeSenha = document.getElementById("senhaconfirmar");
+    
     
     
     //Função para criar conta de Email e Senha no autenticador e para cadastrar dados no realtime
@@ -237,6 +241,7 @@ function UserAtendente(){
                 var chave = firebase.database().ref().child('Usuarios').push().key;
                 var Users = {
                     Nome : Nome.value,
+                    Funcionario: Funcionario,
                     Email : Email,
                     CPF: CPF.value,
                     Chave: chave,
@@ -287,6 +292,7 @@ function UserAtendente(){
 function UserAdministrador(){
    //Variaveis  
    var Usuario = "Administrador";
+   var Funcionario = false;
    var Nome = document.getElementById("nome");
    var CPF = document.getElementById("cpf");
    var EmailPuro = document.getElementById("email");
@@ -303,6 +309,7 @@ function UserAdministrador(){
                var chave = firebase.database().ref().child('Usuarios').push().key;
                var Users = {
                    Nome : Nome.value,
+                   Funcionario: Funcionario,
                    Email : Email,
                    CPF: CPF.value,
                    Chave: chave,
