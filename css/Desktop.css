@@ -292,6 +292,67 @@ body{
     display: none;
 }
 
+/*Aprovação de usuarios*/
+
+#post{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.containerAprovação{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.tituloAP{
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+#CaixaUsuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#CaixaUsuario>p{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.BotAp{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: rgb(51, 175, 51);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.BotEx{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -422,6 +483,20 @@ body{
         margin-left: 0;
     }
 
+    /*Aprovação de Usuarios*/
+
+    .tituloAP{
+        font-size: 30px;
+    }
+
+    #CaixaUsuario{
+        flex-direction: column;
+    }
+    #CaixaUsuario>div{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
 
 
 }
