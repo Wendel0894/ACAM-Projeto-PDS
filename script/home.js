@@ -71,8 +71,8 @@ function abrir(){
             resultado2+="<li><a href=\"#\" class=\"LinkMenuM\">Teste</a></li>"
             resultado2+="<li><a href=\"#\" class=\"LinkMenuM\">Teste</a></li>"
             resultado2+="<li><a href=\"#\" class=\"LinkMenuM\">Teste</a></li>"
-            resultado2+="<li><a href=\"#\" class=\"LinkL\">Login</a></li>"
-            resultado2+="<li><a href=\"#\" class=\"LinkL\">Cadastrar-se</a></li></ul>"
+            resultado2+="<li><a href=\"html/login.html\" class=\"LinkL\">Login</a></li>"
+            resultado2+="<li><a href=\"html/Cadastro.html\" class=\"LinkL\">Cadastrar-se</a></li></ul>"
         
             mainmobile.innerHTML = resultado2;
             
