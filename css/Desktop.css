@@ -12,7 +12,7 @@ body{
     margin-top: 150px;
 }
 
-.caixaForm form{
+.caixaForm .Form{
     background-color:white;
     border-radius: 15px;
     padding: 35px;
@@ -310,8 +310,11 @@ body{
     #butãoLogin{
         width: 280px;
     }
-    .caixaForm form{
+    .caixaForm .Form{
         padding: 20px;
+    }
+    .caixaForm{
+        margin-top: 110px;
     }
 
     /*tela de cadastros*/
