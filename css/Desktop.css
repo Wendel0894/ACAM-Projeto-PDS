@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     background:linear-gradient(to right,teal, rgb(47, 47, 184));
@@ -300,7 +301,7 @@ body{
     margin-top: 20px;
 }
 
-.containerAprovação{
+#containerPost{
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -309,7 +310,7 @@ body{
     border-radius: 20px;
 }
 
-.tituloAP{
+.TituloPost{
     font-family: sans-serif;
     font-size: 50px;
     text-align: center;
@@ -485,7 +486,7 @@ body{
 
     /*Aprovação de Usuarios*/
 
-    .tituloAP{
+    .TituloPost{
         font-size: 30px;
     }
 

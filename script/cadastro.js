@@ -148,7 +148,7 @@ function UserMedico(){
 
  //Variaveis  
  var Usuario = "Medico";
- var Funcionario = false;
+ var Aprovacao = false;
  var Nome = document.getElementById("nome");
  var CPF = document.getElementById("cpf");
  var CRM = document.getElementById("crm");
@@ -167,14 +167,16 @@ function UserMedico(){
              var chave = firebase.database().ref().child('Usuarios').push().key;
              var Users = {
                  Nome : Nome.value,
-                 Funcionario: Funcionario,
                  Email : Email,
                  CPF: CPF.value,
                  CRM : CRM.value,
                  Especializacao : Especializacao,
                  Chave: chave,
                  Usuario: Usuario,
+                 Aprovacao: Aprovacao,
+                 
                };
+        
          firebase
          .auth()
          .createUserWithEmailAndPassword(EmailPuro.value, Senha.value)
@@ -223,7 +225,7 @@ function UserAtendente(){
   
     //Variaveis  
     var Usuario = "Atendente";
-    var Funcionario = false;
+    var Aprovacao = false;
     var Nome = document.getElementById("nome");
     var CPF = document.getElementById("cpf");
     var EmailPuro = document.getElementById("email");
@@ -241,11 +243,11 @@ function UserAtendente(){
                 var chave = firebase.database().ref().child('Usuarios').push().key;
                 var Users = {
                     Nome : Nome.value,
-                    Funcionario: Funcionario,
                     Email : Email,
                     CPF: CPF.value,
                     Chave: chave,
                     Usuario: Usuario,
+                    Aprovacao: Aprovacao,
                   };
             firebase
             .auth()
@@ -292,7 +294,7 @@ function UserAtendente(){
 function UserAdministrador(){
    //Variaveis  
    var Usuario = "Administrador";
-   var Funcionario = false;
+   var Aprovacao = false;
    var Nome = document.getElementById("nome");
    var CPF = document.getElementById("cpf");
    var EmailPuro = document.getElementById("email");
@@ -309,12 +311,13 @@ function UserAdministrador(){
                var chave = firebase.database().ref().child('Usuarios').push().key;
                var Users = {
                    Nome : Nome.value,
-                   Funcionario: Funcionario,
                    Email : Email,
                    CPF: CPF.value,
                    Chave: chave,
                    Usuario: Usuario,
+                   Aprovacao: Aprovacao,
                  };
+             
            firebase
            .auth()
            .createUserWithEmailAndPassword(EmailPuro.value, Senha.value)
